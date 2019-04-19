@@ -1,0 +1,136 @@
+input.urlbar {
+    width:100%;
+    border: none;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    font-size: 1.5em;
+    padding: 4px;
+}
+
+div div {
+    padding-left: 5px;
+}
+span {
+    white-space: pre-wrap;
+}
+a,
+span {
+    margin-right: 5px;
+}
+
+button-container {
+display: block;
+padding: 4px 0px;
+}
+
+button-container button {
+    margin-right: 4px;
+}
+
+button.dropdown {
+    display: block;
+}
+
+button.dropdown::after {
+    content: ' ▼';
+}
+
+body {
+    font-family: sans-serif;
+    background: #f1f1f1;
+    color: #333;
+}
+h1 {
+    font-size: 1.3em
+}
+
+h2 {
+    font-size: 1em
+}
+a:not(:hover) {
+    text-decoration: none;
+}
+
+a.big {
+    display: block;
+    font-size: 1.1em;
+    font-weight:bold;
+    margin-top: 10px;
+}
+
+.list-marker::before {
+    display: block;
+    content: '';
+}
+.list-marker {
+    margin-left: 10px;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+inner {
+    display: block;
+    background-color: white;
+    max-width: 850px;
+    margin: 10px auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+input[type="text"], textarea {
+    display: block;
+    margin-bottom: 5px;
+}
+
+[tabIndex="0"] {
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+}
+[tabIndex="0"]:hover {
+    font-weight: bold;
+    color: #222;
+}
+menu {
+    margin: 12px;
+    padding: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    width: fit-content;
+}
+menu h2 {
+    margin: 4px 0;
+}
+
+menu li {
+    text-decoration: underline;
+    list-style-type: none;
+    padding: 4px;
+    cursor: pointer;
+    color: #888;
+}
+
+menu li:hover {
+    color: #222
+}
+
+tab {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    margin: 5px auto;
+    display: block;
+    padding:  5px;
+    width: fit-content;
+}
+
+ax-image {
+    display:flex;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset;
+    margin: 5px;
+    width: 150px;
+    height: 150px;
+    background-color: #f1f1f1;
+    justify-content: center;
+    align-items: center;
+}
