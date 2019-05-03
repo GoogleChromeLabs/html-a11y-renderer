@@ -20,7 +20,9 @@ const {snapshot} = require('./accessibility');
 const {createJSHandle} = require('puppeteer/lib/JSHandle');
 const prependHttp = require('prepend-http');
 
-const appPromise = carlo.launch().then(async app => {
+const appPromise = carlo.launch({
+  executablePath: puppeteer.executablePath()
+}).then(async app => {
   app.serveFolder(path.resolve(__dirname, 'www'));
   await app.exposeFunction('snapshot', async() => {
     const page = await pagePromise;
